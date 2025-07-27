@@ -14,7 +14,10 @@
     "react-hook-form": "latest",
     "zod": "latest",
     "@hookform/resolvers": "latest",
-    "tailwind-merge": "latest"
+    "tailwind-merge": "latest",
+    "clsx": "latest",
+    "class-variance-authority": "latest",
+    "@radix-ui/react-slot": "latest"
   },
   "devDependencies": {
     "autoprefixer": "latest",

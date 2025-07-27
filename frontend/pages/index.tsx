@@ -1,8 +1,8 @@
-import React from 'react'
-import Head from 'next/head'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { Input } from '../components/ui/input'
+import { Button } from '../components/ui/button'
 
 const schema = z.object({
   name: z.string().min(1, 'Name is required'),
@@ -20,18 +20,13 @@ export default function Home() {
   }
 
   return (
-    <>
-      <Head>
-        <title>RattleNext</title>
-      </Head>
-      <main className="p-4">
-        <h1 className="text-2xl font-bold mb-4">Welcome to RattleNext</h1>
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-2">
-          <input className="border p-2" placeholder="Name" {...register('name')} />
-          {errors.name && <p className="text-red-500">{errors.name.message}</p>}
-          <button type="submit" className="bg-blue-500 text-white px-4 py-2">Submit</button>
-        </form>
-      </main>
-    </>
+    <div className="max-w-md mx-auto space-y-2">
+      <h2 className="text-xl font-semibold">Welcome to RattleNext</h2>
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-2">
+        <Input placeholder="Name" {...register('name')} />
+        {errors.name && <p className="text-red-500">{errors.name.message}</p>}
+        <Button type="submit">Submit</Button>
+      </form>
+    </div>
   )
 }

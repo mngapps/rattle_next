@@ -1,6 +1,6 @@
 # RattleNext Frontend
 
-This is a Next.js application using Tailwind CSS and React Hook Form with Zod for validation.
+This is a Next.js application using Tailwind CSS and React Hook Form with Zod for validation. Base UI components are provided via shadcn/ui styled in the `components/ui` directory. Sample pages include `index` and `login`.
 
 ## Available Scripts
 
