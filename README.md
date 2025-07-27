@@ -1,6 +1,6 @@
 # RattleNext
 
-This repository contains a minimal backbone for a scalable web application using Next.js for the frontend and FastAPI for the backend.
+This repository contains a minimal backbone for a scalable web application using Next.js for the frontend and FastAPI for the backend. The frontend comes with a responsive template architecture including sample `index` and `login` pages.
 
 ## Tech Stack
 
